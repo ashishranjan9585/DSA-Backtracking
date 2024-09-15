@@ -6,6 +6,7 @@ class Solution {
         return finalResult;
     }
     public void helper(int[] nums , List<List<Integer>> finalResult , List<Integer> smallResult){
+       //If one array created then push into the finalResult
          if(smallResult.size() == nums.length) {
              finalResult.add(new ArrayList<>(smallResult));
              return;
